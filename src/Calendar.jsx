@@ -131,6 +131,26 @@ let Calendar = React.createClass({
     views: componentViews,
 
     /**
+     * Determines the default view to display
+     */
+    defaultView: PropTypes.string,
+
+    /**
+     * Determines how many timeslots to split each section into
+     */
+    timeslots: PropTypes.number,
+
+    /**
+     * Determines what the default rendered date is
+     */
+    defaultDate: PropTypes.instanceOf(Date),
+
+    /**
+     * Forces the calendar to render a specific time
+     */
+    now: PropTypes.instanceOf(Date),
+
+    /**
      * Determines whether the toolbar is displayed
      */
     toolbar: PropTypes.bool,
